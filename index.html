@@ -1,115 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Suraj Maurya Kirana Store</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background-color: #f7f7f7;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      color: #2c3e50;
-    }
-    h2 {
-      color: #34495e;
-    }
-    p {
-      color: #555;
-      font-size: 18px;
-    }
-    .products {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-    }
-    .product-item {
-      background: white;
-      border-radius: 8px;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 180px;
-    }
-    .product-item img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-    form {
-      margin-top: 30px;
-    }
-    input, textarea {
-      width: 300px;
-      padding: 10px;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    button {
-      background-color: #27ae60;
-      color: white;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 5px;
-      font-size: 18px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #219150;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>🛒 Suraj Maurya Kirana Store</h1>
+  <input type="text" id="searchBar" placeholder="Search for a product..." style="
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  ">
 
-  <h2>Our Products</h2>
-  <div class="products">
-    <div class="product-item">
-      <img src="https://via.placeholder.com/150" alt="Chini">
-      <p>Chini - ₹40/kg</p>
-    </div>
-    <div class="product-item">
-      <img src="https://via.placeholder.com/150" alt="Atta">
-      <p>Atta - ₹30/kg</p>
-    </div>
-    <div class="product-item">
-      <img src="https://via.placeholder.com/150" alt="Dal">
-      <p>Dal - ₹80/kg</p>
-    </div>
-  </div>
+  <header>
+    <h1>Suraj Maurya Kirana Store</h1>
+    <p>Quality Products at Affordable Prices</p>
+  </header>
 
-  <h2>📍 Our Location</h2>
-  <h2>📍 Our Location</h2>
-<iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.82447138970247!2d80.89032318475063!3d25.90250373588439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399b63006e2bac57%3A0x38ef5fa75d1d8aa0!2sBILANDA%20MAIN%20CHAURAHA!5e1!3m2!1sen!2sus!4v1749477790701!5m2!1sen!2sus" 
-  width="100%" 
-  height="300" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+    <a href="#location">Location</a>
+  </nav>
 
-  <h2>Contact Us</h2>
-  <form>
-    <input type="text" placeholder="Your Name" required><br>
-    <input type="tel" placeholder="Phone Number" required><br>
-    <textarea placeholder="Message
-      <a href="https://wa.me/919695040607" target="_blank" style="
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25D366;
-  color: white;
-  border-radius: 50px;
-  padding: 12px 20px;
-  font-size: 18px;
-  text-decoration: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-  📞 Chat on WhatsApp
-</a>9695040607
+  <section id="home" class="hero">
+    <h2>Welcome to Our Store!</h2>
+    <p>Sabzi, Masale, Daily Items – sab kuch yahan milega!</p>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Our Products</h2>
+    <div class="product-gallery">
+      <div class="product-card">
+        <a href="atta.html">
+          <img src="images/atta.jpg" alt="Atta">
+          <p>Atta - ₹40/kg</p>
+        </a>
+      </div>
+      <div class="product-card">
+        <a href="rice.html">
+          <img src="images/rice.jpg" alt="Rice">
+          <p>Rice - ₹50/kg</p>
+        </a>
+      </div>
+      <div class="product-card">
+        <a href="sugar.html">
+          <img src="images/sugar.jpg" alt="Sugar">
+          <p>Sugar - ₹45/kg</p>
+        </a>
+      </div>
+      <div class="product-card">
+        <a href="shop.html">
+          <img src="images/shop.jpg" alt="Shop">
+          <p>Our Shop</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d352.82447138970247!2d80.89032318475063!3d25.90250373588439" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Suraj Maurya Kirana Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const searchBar = document.getElementById('searchBar');
+    searchBar.addEventListener('keyup', function () {
+      const query = searchBar.value.toLowerCase();
+      const products = document.querySelectorAll('.product-card');
+
+      products.forEach(function (product) {
+        const name = product.textContent.toLowerCase();
+        if (name.includes(query)) {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
 
